@@ -1,0 +1,25 @@
+#icon {
+    width: 60px;
+}
+#hero {
+    color: rgb(204, 204, 204) !important;
+    background-color:#dc3545 !important;
+    background-size: 750px;
+}
+#project-btn:hover {
+    color: #dc3545 !important;
+}
+#about-btn:hover {
+    color: #dc3545 !important;
+}
+.link {
+    text-decoration: underline;
+    color: rgb(204, 204, 204);
+}
+.link:hover {
+    color: #9e2933;
+}
+
+/* BOOTSTRAP CUSTOMS */
+
+
