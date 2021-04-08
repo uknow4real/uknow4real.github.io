@@ -1,5 +1,5 @@
 #icon {
-    width: 60px;
+    width: 70px;
 }
 #hero {
     color: rgb(204, 204, 204) !important;
@@ -19,7 +19,31 @@
 .link:hover {
     color: #9e2933;
 }
+.project-img {
+    width: 100%;
+    height: 225px;
+}
+#coronadapp-logo {
+    background: url(img/logov1.png) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#adsgen-logo {
+    background: url(https://lh3.googleusercontent.com/nupo3HWMIUeuul9r2IBSfpBo568bL-STG9nA71dUuW97DnhAXFgm2WWjczhTFqRHQZRf5VA-_PmxIZaIAXhOUrzfr5unPjFuW9za=w0) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+.project-img img {
+    width: 60%;
+    height: 100%;
+}
 
 /* BOOTSTRAP CUSTOMS */
-
-
+#navbar-links a:hover {
+    color: #6c757d!important;
+}
+.row {
+    margin-top: 10px;
+}
