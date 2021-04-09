@@ -1,17 +1,33 @@
+/*header {
+    position: fixed;
+    width: 100%;
+}*/
+:root {
+    --mainColor: #dc3545;
+}
+html, body {
+    font-size: 1.1rem;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-weight: 700 !important;
+}
+*
+body h3, h6 {
+    font-weight: 700 !important;
+}
 #icon {
     width: 70px;
 }
 #hero {
     color: rgb(235, 235, 235) !important;
-    background: linear-gradient(-45deg, #dc3545, #2ab9ec, #dc3545, #dc3545);
+    background: linear-gradient(-45deg, var(--mainColor), #2ab9ec, var(--mainColor), var(--mainColor));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
 #project-btn:hover {
-    color: #dc3545 !important;
+    color: var(--mainColor) !important;
 }
 #about-btn:hover {
-    color: #dc3545 !important;
+    color: var(--mainColor) !important;
 }
 .link {
     text-decoration: underline;
@@ -20,7 +36,7 @@
 .link:hover {
     border-radius: 3px;
     background-color: white;
-    color: #dc3545;
+    color: var(--mainColor);
 }
 .project-img {
     width: 100%;
@@ -71,12 +87,31 @@
     -ms-transition: all 0.3s ease;
 }
 .about-img img:hover {
-    height: 62%;
-    width: 62%;
     background-color: #9e2933;
+}
+.about-img small {
+
 }
 #jumbotron-row {
     margin-bottom: 10px;
+}
+#about p {
+    font-size: 19px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+}
+#about p a {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+}
+#about p a:hover {
+    background-size: 4px 50px;
+    color: white;
 }
 
 /* BOOTSTRAP CUSTOMS */
