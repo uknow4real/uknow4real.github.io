@@ -2,7 +2,7 @@
     width: 70px;
 }
 #hero {
-    color: rgb(204, 204, 204) !important;
+    color: rgb(230, 230, 230) !important;
     background-color:#dc3545 !important;
     background-size: 750px;
 }
@@ -14,7 +14,7 @@
 }
 .link {
     text-decoration: underline;
-    color: rgb(204, 204, 204);
+    color: rgb(230, 230, 230);
 }
 .link:hover {
     color: #9e2933;
@@ -39,6 +39,42 @@
     width: 60%;
     height: 100%;
 }
+#logo-container {
+    margin-left: 94.5px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 90px;
+}
+#schmel-logo {
+    height: 130px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+#schmel-logo:hover {
+    height: 140px;
+}
+.about-img {
+    text-align: center;
+}
+.about-img img {
+    height: 60%;
+    width: 60%;
+    background-color: #475258;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.about-img img:hover {
+    height: 62%;
+    width: 62%;
+    background-color: #9e2933;
+}
+#jumbotron-row {
+    margin-bottom: 10px;
+}
 
 /* BOOTSTRAP CUSTOMS */
 #navbar-links a:hover {
@@ -46,4 +82,9 @@
 }
 .row {
     margin-top: 10px;
+}
+@media screen and (max-width: 375px) {
+    .img-fluid {
+        max-height: 75px !important;
+    }
 }

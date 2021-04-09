@@ -32,13 +32,11 @@
     <!-- Hero section -->
     <div class="bg-dark text-secondary px-4 py-5 text-center" id="hero">
         <div class="py-5">
-            <h1 class="display-5 fw-bold text-white">Sebastian Chmel</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="fs-5 mb-4">Hey! I am a computer science student at the <a href="https://www.fh-campuswien.ac.at/" class="link"><b>University of Applied Sciences Campus Vienna</b></a>.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a href="#portfolio"><button type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold red-700" id="project-btn">My Projects</button></a>
-                    <a href="#contact"><button type="button" class="btn btn-outline-light btn-lg px-4" id="about-btn">About me</button></a>
-                </div>
+            <img src="img/s_chmel.png" class="rounded mx-auto d-block img-fluid" id="schmel-logo">
+            <p class="fs-5 mb-4">Hey! I am a computer science student at the <a href="https://www.fh-campuswien.ac.at/" class="link"><b>University of Applied Sciences Campus Vienna</b></a>.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="#portfolio"><button type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold red-700" id="project-btn">My Projects</button></a>
+                <a href="#about"><button type="button" class="btn btn-outline-light btn-lg px-4" id="about-btn">About me</button></a>
             </div>
         </div>
     </div>
@@ -47,7 +45,13 @@
     <!-- Project Portfolio -->
     <div class="album py-5 bg-light" id="portfolio">
         <div class="container">
-            <h5>My Projects</h5>
+            <div class="row">
+                <h3><i class="fas fa-folder-open"></i> My Projects</h3>
+                <h6 style="text-align: center;">Source code available on my 
+                    <a class="btn btn-outline-dark btn-floating m-1" target="_blank" href="https://github.com/uknow4real" role="button">
+                    <b>Github</b> <i class="fab fa-github"></i></a>
+                </h6>
+            </div>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
@@ -93,6 +97,32 @@
         </div>
     </div>
     <!-- Project Portfolio -->
+
+    <!-- About me -->
+    <div class="jumbotron" id="about">
+        <div class="container">
+            <div class="row align-items-center" id="jumbotron-row">
+                <div class="col-xl-6 col-lg-6 col-md-10">
+                    <div class="about-caption mb-50">
+                        <div class="section-tittle mb-35">
+                            <h1><i class="far fa-user-circle"></i> About me</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <a class="btn btn-outline-danger" href="#contact" role="button">Contact me »</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <small class="text-muted"><i class="fas fa-chevron-down"></i> My LinkedIn <i class="fas fa-chevron-down"></i></small>
+                        <a href="https://www.linkedin.com/in/sebastian-chmel-8590a018a/" target="_blank"><img src="img/SebastianChmel.png" alt="Sebastian Chmel" class="rounded-circle mx-auto d-block shadow-sm p-3 mt-4 mb-5 bg-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About me -->
+
 </body>
 <!-- BODY -->
 
@@ -102,24 +132,24 @@
     <div class="container p-4">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <p>Get in touch with me:</p>
+        <b><p class="text-uppercase">Get in touch with me:</p></b>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/prod.4real/" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/prod.4real/" role="button"
           ><i class="fab fa-instagram"></i
         ></a>
   
         <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/sebastian-chmel-8590a018a/" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/sebastian-chmel-8590a018a/" role="button"
           ><i class="fab fa-linkedin-in"></i
         ></a>
   
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/uknow4real" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/uknow4real" role="button"
           ><i class="fab fa-github"></i
         ></a>
 
         <!-- Email -->
-        <a class="btn btn-outline-light btn-floating m-1" href="mailto:sebastian.chmel@stud.fh-campuswien.ac.at" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:sebastian.chmel@stud.fh-campuswien.ac.at" role="button"
           ><i class="far fa-envelope"></i></a>
       </section>
       <!-- Section: Social media -->
