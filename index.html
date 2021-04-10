@@ -111,10 +111,10 @@
                         <div class="section-tittle mb-35">
                             <h1><i class="far fa-user-circle"></i> About me</h1>
                         </div>
-                        <p>I am Sebastian,👋<br> a fourth-semester student of 'Computer Science & Digital Communications'<br> at the University Of Applied Sciences Campus Vienna, majoring in <br>Artificial Intelligence & Data Science🧠 and IT Security🔐.</p>
+                        <p>I am Sebastian, 👋<br> a fourth-semester student of 'Computer Science & Digital Communications'<br> at the University Of Applied Sciences Campus Vienna, majoring in <br>Artificial Intelligence & Data Science 🧠 and IT Security 🔐.</p>
                         <p>I love to code and solve new problems. <br>Currently I am working on a Blockchain project, a decentralized application to be specific, which will store smart contracts that automatically run when predetermined conditions are met. I also really enjoy making beats, which I upload on my <a href="https://www.youtube.com/c/prod4real/" target="_blank">YouTube channel</a> and <a href="https://www.beatstars.com/4real/" target="_blank">beatstore</a>.</p>
                         <p></p>
-                        <a class="btn btn-danger" href="https://drive.google.com/file/d/1W_ketZabRj8jaD7X9OYS_ygoPkFF6FCZ/view?usp=sharing" target="_blank" role="button"><b>Curriculum Vitae</b></a>
+                        <!-- <a class="btn btn-danger" href="https://drive.google.com/file/d/1W_ketZabRj8jaD7X9OYS_ygoPkFF6FCZ/view?usp=sharing" target="_blank" role="button"><b>Curriculum Vitae</b></a> -->
                         <a class="btn btn-warning" href="#contact" role="button"><b>Contact me »</b></a>
                     </div>
                 </div>
@@ -143,6 +143,12 @@
                     scrollTop: $($.attr(this, 'href')).offset().top
                 }, 500); // 500 = 0.5 seconds
             });
+        });
+        $('img').bind('contextmenu', function(e) {
+	        return false;
+        });
+        $("img").mousedown(function(e){
+            e.preventDefault()
         });
     </script>
     <!-- Scripts -->
