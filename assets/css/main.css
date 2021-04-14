@@ -42,14 +42,41 @@ body h3, h6 {
     width: 100%;
     height: 225px;
 }
-#coronadapp-logo {
-    background: url("../../img/logov1.png") no-repeat center center;
+#medpass-logo {
+    background: url("../../img/logov2.png") no-repeat center center;
     background-size: 100%;
     height: 100%;
     width: 100%;
 }
+.card-text {
+    font-size: 1rem;
+}
 #adsgen-logo {
     background: url(https://lh3.googleusercontent.com/nupo3HWMIUeuul9r2IBSfpBo568bL-STG9nA71dUuW97DnhAXFgm2WWjczhTFqRHQZRf5VA-_PmxIZaIAXhOUrzfr5unPjFuW9za=w0) no-repeat center center;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+#wiresharker-logo {
+    background: url("../../img/WiresharkerLogo.png") no-repeat center center;
+    background-size: 90%;
+    height: 100%;
+    width: 100%;
+}
+#studyfam-logo {
+    background: url("../../img/st_logov1.png") no-repeat center center;
+    background-size: 90%;
+    height: 100%;
+    width: 100%;
+}
+#musicr-logo {
+    background: url("../../img/musicr-logo.jpeg") no-repeat center center;
+    background-size: 50%;
+    height: 100%;
+    width: 100%;
+}
+#cryptocheck-logo {
+    background: url("../../img/cryptocheck.png") no-repeat center center;
     background-size: 100%;
     height: 100%;
     width: 100%;
@@ -137,5 +164,11 @@ body h3, h6 {
 @media screen and (max-width: 375px) {
     .img-fluid {
         max-height: 75px !important;
+    }
+    .text-muted {
+        margin-left: 5px;
+    }
+    .about-img {
+        margin-top: 10px;
     }
 }
