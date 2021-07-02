@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sebastian Chmel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46f21292ec.js" crossorigin="anonymous"></script>
+</head>
+<!-- BODY -->
+<body>
+    <!-- Topbar/header -->
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="img/portfolio_icon.png" class="bi me-2" id="icon">
+                </a>
+            
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="navbar-links">
+                    <li><a href="./index.html#portfolio" class="nav-link px-2 text-white">Projects</a></li>
+                    <li><a href="./about.html#about" class="nav-link px-2 text-white">About</a></li>
+                    <li><a href="./contact.html#contact" class="nav-link px-2 text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Topbar/header -->
+
+    <!-- Hero section -->
+    <div class="bg-dark text-secondary px-4 py-5 text-center" id="hero">
+        <div class="py-5">
+            <img src="img/s_chmel.png" class="rounded mx-auto d-block img-fluid" id="schmel-logo">
+            <p class="fs-5 mb-4">Hey! I am a computer science student at the <a href="https://www.fh-campuswien.ac.at/" class="link" target="_blank"><b>University of Applied Sciences Campus Vienna</b></a>.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" id="hero-btns">
+                <a href="./index.html#portfolio"><button type="button" class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold red-700" id="project-btn">My Projects</button></a>
+                <a href="./about.html#about"><button type="button" class="btn btn-outline-light btn-lg px-4" id="about-btn">About me</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero section -->
+
+   <!-- About me -->
+    <div class="jumbotron" id="about">
+        <div class="container">
+            <div class="row align-items-center" id="jumbotron-row">
+                <div class="col-xl-6 col-lg-6 col-md-10">
+                    <div class="about-caption mb-50">
+                        <div class="section-tittle mb-35">
+                            <h1><i class="far fa-user-circle"></i> About me</h1>
+                        </div>
+                        <p>I am Sebastian, 👋<br> a fourth-semester student of 'Computer Science & Digital Communications'<br> at the University Of Applied Sciences Campus Vienna, majoring in <br>Artificial Intelligence & Data Science 🧠 and IT Security 🔐.</p>
+                        <p>I love to code and solve new problems. <br>Currently I am working on a Blockchain project, a decentralized application to be specific, which will store smart contracts that automatically run when predetermined conditions are met. I also really enjoy making beats, which I upload on my <a href="https://www.youtube.com/c/prod4real/" target="_blank">YouTube channel</a> and <a href="https://www.beatstars.com/4real/" target="_blank">beatstore</a>.</p>
+                        <p></p>
+                        <a class="btn btn-danger" href="Sebastian_Chmel_Lebenslauf.pdf" target="_blank" role="button"><b>Curriculum Vitae</b></a>
+                        <a class="btn btn-warning" href="./contact.html#contact" role="button"><b>Contact me »</b></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <small class="text-muted"><i class="fas fa-chevron-down"></i> My LinkedIn <i class="fas fa-chevron-down"></i></small>
+                        <a href="https://www.linkedin.com/in/sebastian-chmel-8590a018a/" target="_blank"><img src="img/SebastianChmel.png" alt="Sebastian Chmel" class="rounded-circle mx-auto d-block shadow-sm p-3 mt-4 mb-5 bg-rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About me -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#navbar-links a").on('click', function() {
+                $("html, body").animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500); // 500 = 0.5 seconds
+            });
+            $("#hero-btns a").on('click', function() {
+                $("html, body").animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500); // 500 = 0.5 seconds
+            });
+        });
+        $('img').bind('contextmenu', function(e) {
+	        return false;
+        });
+        $("img").mousedown(function(e){
+            e.preventDefault()
+        });
+    </script>
+    <!-- Scripts -->
+</body>
+<!-- BODY -->
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white" id="contact">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <b><p class="text-uppercase">Get in touch with me:</p></b>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/prod.4real/" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/sebastian-chmel-8590a018a/" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/uknow4real" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+
+        <!-- Email -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:sebastian.chmel@stud.fh-campuswien.ac.at" role="button"
+          ><i class="far fa-envelope"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p><i>
+            “Smart people learn from everything and everyone, average people from their experiences, stupid people already have all the answers.” – Socrates
+        </i></p>
+      </section>
+      <!-- Section: Text -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Sebastian Chmel
+    </div>
+    <!-- Copyright -->
+  
+</footer>
+<!-- Footer -->  
+</html>

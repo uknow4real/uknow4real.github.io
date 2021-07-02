@@ -141,12 +141,32 @@ body h3, h6 {
     color: white;
 }
 
+/* CONTACT PAGE */
+.btns-new {
+    border: 3px solid !important;
+    border-radius: 1rem !important;
+}
+#refresh {
+    color: #58A7D3;
+}
+#refresh:hover {
+    color: white;
+    background-color: #58A7D3;
+}
+
 /* BOOTSTRAP CUSTOMS */
 #navbar-links a:hover {
     color: #6c757d!important;
 }
 .row {
     margin-top: 10px;
+}
+.row textarea {
+    resize: none;
+}
+input:focus, textarea:focus {
+    box-shadow: none;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .075), 0 0 8px #44C253 !important;
 }
 
 /* KEYFRAMES & Mobile Responsivness */
