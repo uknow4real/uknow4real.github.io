@@ -2,95 +2,116 @@
     position: fixed;
     width: 100%;
 }*/
+
 :root {
     --mainColor: #dc3545;
 }
-html, body {
+
+html,
+body {
     font-size: 1.1rem;
     font-family: 'Titillium Web', sans-serif !important;
     font-weight: 700 !important;
 }
-*
-body h3, h6 {
+
+* body h3,
+h6 {
     font-weight: 700 !important;
 }
+
 #icon {
     width: 70px;
 }
+
 #hero {
     color: rgb(235, 235, 235) !important;
     background: linear-gradient(-45deg, var(--mainColor), #2ab9ec, var(--mainColor), var(--mainColor));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
+
 #project-btn:hover {
     color: var(--mainColor) !important;
 }
+
 #about-btn:hover {
     color: var(--mainColor) !important;
 }
+
 .link {
     text-decoration: underline;
     color: rgb(235, 235, 235);
 }
+
 .link:hover {
     border-radius: 3px;
     background-color: white;
     color: var(--mainColor);
 }
+
 .project-img {
     width: 100%;
     height: 225px;
 }
+
 #medpass-logo {
-    background: url("../../img/logov2.png") no-repeat center center;
+    background: url("./../assets/img/projects/logov2.png") no-repeat center center;
     background-size: 100%;
     height: 100%;
     width: 100%;
 }
+
 .card-text {
     font-size: 1rem;
 }
+
 #adsgen-logo {
     background: url(https://lh3.googleusercontent.com/nupo3HWMIUeuul9r2IBSfpBo568bL-STG9nA71dUuW97DnhAXFgm2WWjczhTFqRHQZRf5VA-_PmxIZaIAXhOUrzfr5unPjFuW9za=w0) no-repeat center center;
     background-size: 100%;
     height: 100%;
     width: 100%;
 }
+
 #wiresharker-logo {
-    background: url("../../img/WiresharkerLogo.png") no-repeat center center;
+    background: url("./../assets/img/projects/WiresharkerLogo.png") no-repeat center center;
     background-size: 90%;
     height: 100%;
     width: 100%;
 }
+
 #studyfam-logo {
-    background: url("../../img/st_logov1.png") no-repeat center center;
+    background: url("./../assets/img/projects/st_logov1.png") no-repeat center center;
     background-size: 90%;
     height: 100%;
     width: 100%;
 }
+
 #musicr-logo {
-    background: url("../../img/musicr-logo.jpeg") no-repeat center center;
+    background: url("./../assets/img/projects/musicr-logo.jpeg") no-repeat center center;
     background-size: 50%;
     height: 100%;
     width: 100%;
 }
+
 #cryptocheck-logo {
-    background: url("../../img/cryptocheck.png") no-repeat center center;
+    background: url("./../assets/img/projects/cryptocheck.png") no-repeat center center;
     background-size: 100%;
     height: 100%;
     width: 100%;
 }
+
 .project-img img {
     width: 60%;
     height: 100%;
 }
+
 #logo-container {
     margin-left: 94.5px;
     margin-bottom: 10px;
     width: 500px;
     height: 90px;
 }
+
 #schmel-logo {
     height: 130px;
     -webkit-transition: all 0.3s ease;
@@ -98,12 +119,15 @@ body h3, h6 {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
 }
+
 #schmel-logo:hover {
     height: 140px;
 }
+
 .about-img {
     text-align: center;
 }
+
 .about-img img {
     height: 60%;
     width: 60%;
@@ -113,20 +137,23 @@ body h3, h6 {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
 }
+
 .about-img img:hover {
     background-color: #9e2933;
 }
-.about-img small {
 
-}
+.about-img small {}
+
 #jumbotron-row {
     margin-bottom: 10px;
 }
+
 #about p {
     font-size: 19px;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 800;
 }
+
 #about p a {
     background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
     background-position: 0 100%;
@@ -136,51 +163,65 @@ body h3, h6 {
     text-decoration: none;
     transition: background-size .2s;
 }
+
 #about p a:hover {
     background-size: 4px 50px;
     color: white;
 }
 
+
 /* CONTACT PAGE */
+
 .btns-new {
     border: 3px solid !important;
     border-radius: 1rem !important;
 }
+
 #refresh {
     color: #58A7D3;
 }
+
 #refresh:hover {
     color: white;
     background-color: #58A7D3;
 }
 
+
 /* BOOTSTRAP CUSTOMS */
+
 #navbar-links a:hover {
     color: #6c757d!important;
 }
+
 .row {
     margin-top: 10px;
 }
+
 .row textarea {
     resize: none;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
     box-shadow: none;
     -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .075), 0 0 8px #44C253 !important;
 }
 
+
 /* KEYFRAMES & Mobile Responsivness */
+
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
 @media screen and (max-width: 375px) {
     .img-fluid {
         max-height: 75px !important;
