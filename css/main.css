@@ -1,8 +1,3 @@
-/*header {
-    position: fixed;
-    width: 100%;
-}*/
-
 :root {
     --mainColor: #dc3545;
 }
@@ -54,6 +49,19 @@ h6 {
     height: 225px;
 }
 
+#portfolio {
+    padding-bottom: 1rem !important;
+}
+
+.btn-div {
+    transition: all 0.4s ease;
+}
+
+.show-more {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
 #medpass-logo {
     background: url("./../assets/img/projects/logov2.png") no-repeat center center;
     background-size: 100%;
@@ -63,6 +71,13 @@ h6 {
 
 .card-text {
     font-size: 1rem;
+}
+
+#letschat-logo {
+    background: url("./../assets/img/projects/letschat.png") no-repeat center center;
+    background-size: 95%;
+    height: 100%;
+    width: 100%;
 }
 
 #adsgen-logo {
@@ -114,6 +129,7 @@ h6 {
 
 #schmel-logo {
     height: 130px;
+    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -132,6 +148,7 @@ h6 {
     height: 60%;
     width: 60%;
     background-color: #475258;
+    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -141,8 +158,6 @@ h6 {
 .about-img img:hover {
     background-color: #9e2933;
 }
-
-.about-img small {}
 
 #jumbotron-row {
     margin-bottom: 10px;
@@ -189,8 +204,23 @@ h6 {
 
 /* BOOTSTRAP CUSTOMS */
 
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--mainColor);
+    transition: width .3s;
+    opacity: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
 #navbar-links a:hover {
-    color: #6c757d!important;
+    color: #8d99a3!important;
 }
 
 .row {
